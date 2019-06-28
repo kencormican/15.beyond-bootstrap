@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Containers */
+
+.alert-container {
+	
+}
+.quotes-container {
+	
+}
+.features-container {
+	
+}
+
+
+.callout-container {
+    /* vh- is Viewport Height feature that allows you to stretch image to entire height of browser page*/
+	
+	height: 100vh;
+	
+	/*Whiskey image from the net with vendor specific tags*/
+    background: url('../images/whiskey-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	
+	/*Flexbox used for aligning text to center*/
+	
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+	/* add opaque overlay to sit on top of background image using rgba colour to affect transparency  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Modify bootstrap default jumbotron style by increasing specificity */
+/*Jumbotron*/
+
+
+/*Jumbotron element background transparency*/
+.jumbotron {
+    background-color: transparent;
+}
+
+/*Jumbotron header text*/
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/*Jumbotron lead text*/
+.jumbotron .lead {
+    color: #a7a7a7;
+    margin: 25px 0;
+}
+
+/*Jumbotron footer text*/
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
+
+
+/* Modify bootstrap default block divider elements*/
+/* Block dividers */
+
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+.block-divider--orange {
+    background-color: #f05f40;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+/*Pseudo element hover states modified*/
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
+}
+
